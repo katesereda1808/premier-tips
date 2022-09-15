@@ -1,0 +1,33 @@
+.payment{
+    font-weight: 200;
+}
+.button{
+    width: 100%;
+    /* padding: 10px; */
+    font-weight: 400;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.img_in_btn{
+    margin-top: 5px;
+}
+.btn_blue{
+    color: #ffffff;
+    background-color: #377BFF;
+}
+.btn_gray{
+    color: #3C3C3C;
+    background-color: #F5F5F5;
+}
+.warning{
+    margin-top: 12px;
+}
+a{
+    color: #377BFF;
+    text-decoration: none;
+}

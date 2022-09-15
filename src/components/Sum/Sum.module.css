@@ -1,0 +1,45 @@
+
+.input_box{
+    height: 54px;
+    overflow: hidden;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid hsla(0, 0%, 24%, 0.5);
+    margin-top: 28px;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.input{
+    /* height: 100%; */
+    width: 100%;
+    border: 0px;
+    font-size: 44px;
+    font-weight: 400;
+    outline: none;
+    /* font-family: 'SF Pro Display', sans-serif; */
+}
+.close_btn{
+    height: 24px;
+}
+.sums{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+.price_btn{
+    padding: 13px 11px;
+    border-radius: 4px;
+    color: #3C3C3C;
+    background-color: #F5F5F5;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: fit-content;
+    margin-right: 10px;
+}
+.price_chosen{
+    background-color: #3C3C3C;
+    color: #ffffff;
+}

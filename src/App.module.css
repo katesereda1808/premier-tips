@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./components/assets/fonts/SF-pro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./components/assets/fonts/SF-pro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./components/assets/fonts/SF-pro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./components/assets/fonts/SF-pro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    font-family: 'SF Pro Display', sans-serif;
+    height: 100%;
+    font-weight: 400;
+    /* background: linear-gradient(to bottom, #3C3C3C 32.7%, transparent 32.7%); */
+    background: linear-gradient(to bottom, #3C3C3C 18.8%, transparent 18.8%);
+    background-repeat: no-repeat;
+    /* padding-top: 199px; */
+    padding-top: 155px;
+    padding-bottom: 113px;
+    font-size: 12px;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    padding: 0 24px;
+    overflow: hidden;
+}
