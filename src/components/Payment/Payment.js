@@ -1,9 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import spb from '../assets/images/spb.svg';
+import unchecked from '../assets/images/unchecked.svg';
+import checked from '../assets/images/checked.svg';
 import s from './Payment.module.css';
 
 
-const Payment =()=> {
+const Payment =({sum})=> {
+    const [compensationSum, setCompensationSum] = useState(0);
+    const [isChecked, setChecked] = useState(false);
+    // const checkboxChange =()=>{
+        // checked?
+        // setChecked(false):
+        // setChecked(true)
+        // более лаконичный способ
+    //     setChecked(!isChecked);
+    // }
+    // решила прописать функцию в разметке, тк она небольшая
+
+    const comissionSum = sum.replace(/\D/g,'')*0.05;
+    
     return(
         <div className={s.payment}>
             <button className={`${s.button} ${s.btn_blue}`}>
@@ -13,10 +28,11 @@ const Payment =()=> {
                 Оплатить картой
             </button>
             <div className={s.comission}>
-                <input type="checkbox" id="add_compensation"></input>
-                <label for="add_compensation">
+                <label>
+                    <input type="checkbox" name="compensation" checked={isChecked} onChange={()=>setChecked(!isChecked)} className={s.default_checkbox}/>
+                    <img className={s.checkbox}  src={`${isChecked? checked: unchecked}`}/>
                     Я хочу компенсировать комиссию сервиса
-                    транзакций 25 руб., чтобы покрыть издержки за перевод средств сотруднику 
+                    транзакций {comissionSum} руб., чтобы покрыть издержки за перевод средств сотруднику 
                 </label>
                 
             </div>

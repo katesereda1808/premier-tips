@@ -1,26 +1,32 @@
-.stars{
+.stars {
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
     padding: 0 7px;
+    position: relative;
+        margin-bottom: 35px;
 }
-.star{
+.star_radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.star {
     height: 46px;
 }
-.comment_container{
+.comment_container {
     font-weight: 400;
-    color: #5E5E5E;
-    margin-top: 35px;
+    color: #5e5e5e;
     letter-spacing: 0.7px;
 }
-.comment_text{
+.comment_text {
     margin-top: 17px;
     margin-bottom: 24px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
-    color: #5E5E5E;
+    color: #5e5e5e;
     outline: none;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: "SF Pro Display", sans-serif;
     width: 100%;
     min-height: 96px;
     padding: 15px 13px;

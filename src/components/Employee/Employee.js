@@ -7,6 +7,7 @@ import s from './Employee.module.css';
 const Employee =()=> {
     return(
         <div className={s.profile}>
+            <div className={s.background}></div>
             <img src={profile_photo} className={s.profile_photo}/>
             <div className={s.name}>
                 Артур Гаврилов

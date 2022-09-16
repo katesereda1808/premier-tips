@@ -31,3 +31,16 @@ a{
     color: #377BFF;
     text-decoration: none;
 }
+.checkbox {
+    display: inline-block;
+    height: 18px;
+}
+
+label {
+    position: relative;
+}
+
+.default_checkbox {
+    opacity: 0;
+    position: absolute;
+}

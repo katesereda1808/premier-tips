@@ -22,12 +22,15 @@
     font-weight: 600;
     font-style: normal;
 }
+
 body{
+    display: flex;
     font-family: 'SF Pro Display', sans-serif;
     height: 100%;
     font-weight: 400;
+    justify-content: center;
     /* background: linear-gradient(to bottom, #3C3C3C 32.7%, transparent 32.7%); */
-    background: linear-gradient(to bottom, #3C3C3C 18.8%, transparent 18.8%);
+    /* background: linear-gradient(to bottom, #3C3C3C 18.8%, transparent 18.8%); */
     background-repeat: no-repeat;
     /* padding-top: 199px; */
     padding-top: 155px;
@@ -39,6 +42,8 @@ button{
     cursor: pointer;
 }
 .container{
+    box-sizing: border-box;
     padding: 0 24px;
     overflow: hidden;
+    max-width: 400px
 }
