@@ -3,19 +3,18 @@ import close_btn from '../assets/images/close_btn.svg';
 import s from './Sum.module.css';
 
 const Sum =({onChangeSum, value})=> {
-    const [sum, setSum] = useState(0);
+    // const [sum, setSum] = useState(0);
     const handleChange=(e)=>{
         // setSum(e.target.value);
         // onChangeSum(sum);
         // ошибка, переданное значение опаздывало на 1 символ, тк useState асинхронный
         // чтобы избежать задержки, вместо state используется e.target.value
         onChangeSum(e.target.value);
-        const pos = e.target.value.length - 2;
-        e.target.setSelectionRange(0, pos);
-        console.log(e.target.value)
+        // const pos = e.target.value.length - 3;
+        // e.target.setSelectionRange(0, pos);
+        // console.log(e.target)
     }
-    // const formatted = value.replace(/\D/g,'')+' ₽';
-    const formatted = value;
+    const formatted = value.replace(/\D/g,'')+' ₽';
     const clearInput=()=>{
         onChangeSum('');
     }
@@ -34,14 +33,16 @@ const Sum =({onChangeSum, value})=> {
                 // onChange={(e)=>onChangeSum(e.target.value)}
                 // onClick={()=>onChangeSum(sum)}
                 ></input>
+                <button>
+                    <img src={close_btn} className={s.close_btn} onClick={clearInput}/>
+                </button>
                 
-                <img src={close_btn} className={s.close_btn} onClick={clearInput}/>
             </div>
             
             <div className={s.sums}>
                 {sums.map((sum, i)=>{
                     return(
-                        <button key={i} value={sum} className={s.price_btn} onClick={handleChange}>
+                        <button key={i} value={sum} className={`${s.price_btn} ${sum == value? s.price_chosen: ''}`} onClick={handleChange}>
                             {sum} ₽
                         </button>
                     )

@@ -8,15 +8,12 @@ import { Payment } from './components/Payment/Payment';
 function App() {
   const [sum, setSum] = useState('');
   const handleSum=(sumValue)=>{
-    
-    // const regex = /^\d+$/;
-
     // setSum(sumValue.replace(/\D/g,'')+' $');
+    // сначала символ валюты добавлялся здесь, но потом стало понятно, что лучше его добавлять в компоненте Sum
     setSum(sumValue);
-    console.log(sum);
   }
   return (
-    <div className={s.container}>
+    <div className={s.container} pointerEvents="none">
       <Employee/>
       <Sum onChangeSum={handleSum} value={sum}/>
       <Rating/>

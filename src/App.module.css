@@ -32,11 +32,11 @@ body{
     /* background: linear-gradient(to bottom, #3C3C3C 32.7%, transparent 32.7%); */
     /* background: linear-gradient(to bottom, #3C3C3C 18.8%, transparent 18.8%); */
     background-repeat: no-repeat;
-    /* padding-top: 199px; */
     padding-top: 155px;
     padding-bottom: 113px;
     font-size: 12px;
     margin: 0;
+    min-width: 280px;
 }
 button{
     cursor: pointer;
@@ -45,5 +45,13 @@ button{
     box-sizing: border-box;
     padding: 0 24px;
     overflow: hidden;
-    max-width: 400px
+    max-width: 400px;
+        min-width: 280px;
+    }
+    
+    @media (max-width: 375px) {
+        body {
+            display: block;
+            /* min-width: 280px; */
+        }
 }

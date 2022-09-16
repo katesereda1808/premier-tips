@@ -17,7 +17,7 @@ const Payment =({sum})=> {
     // }
     // решила прописать функцию в разметке, тк она небольшая
 
-    const comissionSum = sum.replace(/\D/g,'')*0.05;
+    const comissionSum = Math.ceil(sum.replace(/\D/g,'')*0.05);
     
     return(
         <div className={s.payment}>
@@ -31,8 +31,10 @@ const Payment =({sum})=> {
                 <label>
                     <input type="checkbox" name="compensation" checked={isChecked} onChange={()=>setChecked(!isChecked)} className={s.default_checkbox}/>
                     <img className={s.checkbox}  src={`${isChecked? checked: unchecked}`}/>
-                    Я хочу компенсировать комиссию сервиса
-                    транзакций {comissionSum} руб., чтобы покрыть издержки за перевод средств сотруднику 
+                    <p  className={s.comission_text}>
+                        Я хочу компенсировать комиссию сервиса
+                        транзакций {comissionSum} руб., чтобы покрыть издержки за перевод средств сотруднику 
+                    </p>
                 </label>
                 
             </div>
