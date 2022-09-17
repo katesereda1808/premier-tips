@@ -4,7 +4,7 @@ import { MainPage } from './components/MainPage/MainPage';
 
 function App() {
   return (
-    <div className={s.container} pointerEvents="none">
+    <div className={s.container}>
       <MainPage/>
     </div>
   );
