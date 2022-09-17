@@ -12,7 +12,7 @@ const MainPage = () => {
         setSum(sumValue);
     }
     return (
-        <div>
+        <div pointerEvents="none">
             <Employee />
             <Sum onChangeSum={handleSum} value={sum} />
             <Rating />
