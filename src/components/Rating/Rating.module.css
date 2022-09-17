@@ -33,13 +33,14 @@
     resize: none;
     box-sizing: border-box;
 }
-@media (max-width: 375px) {
-    .stars {
-        /* padding: 0 0; */
+@media (max-width: 376px) {
+    .star {
+        height: 12vw;
+        min-height: 40px;
     }
+}
 
-                                                                .star {
-                                                                    height: 12vw;
-                                                                    /* min-width: ; */
-                                                                }
-                                                                }
+/* @media (max-width: 375px) {
+    .star {
+            height: 12vw;
+    */

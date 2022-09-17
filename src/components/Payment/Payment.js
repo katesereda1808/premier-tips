@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import spb from '../assets/images/spb.svg';
-import unchecked from '../assets/images/unchecked.svg';
-import checked from '../assets/images/checked.svg';
+import React, { useState } from 'react';
+import spb from '../assets/images/icons/spb.svg';
+import unchecked from '../assets/images/icons/unchecked.svg';
+import checked from '../assets/images/icons/checked.svg';
 import s from './Payment.module.css';
 
 
-const Payment =({sum})=> {
-    const [compensationSum, setCompensationSum] = useState(0);
+const Payment = ({ sum }) => {
     const [isChecked, setChecked] = useState(false);
     // const checkboxChange =()=>{
         // checked?

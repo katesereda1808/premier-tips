@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import star_empty from "../assets/images/star_empty.svg";
-import star_fill from "../assets/images/star_fill.svg";
+import React, { useState } from "react";
+import star_empty from "../assets/images/icons/star_empty.svg";
+import star_fill from "../assets/images/icons/star_fill.svg";
 import s from "./Rating.module.css";
 
 const Rating = () => {
-    // написать состояние pressed
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   const setStars=(num)=>{
@@ -15,7 +14,6 @@ const Rating = () => {
     }
   }
   return (
-
     <>
       <div className={s.stars}>
         {[...Array(5)].map((star, i)=>{
@@ -36,7 +34,6 @@ const Rating = () => {
           )
         })}
       </div>
-      {/* условный рендеринг */}
       {
         rating && 
         <div className={s.comment_container}>
@@ -45,8 +42,7 @@ const Rating = () => {
         </div>
         <textarea className={s.comment_text} placeholder="Ваш комментарий">
         </textarea>
-        </div>
-
+          </div>
       }
     </>
   );

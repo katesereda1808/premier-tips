@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import profile_photo from '../assets/images/profile-photo.png';
-import check from '../assets/images/check.svg';
+import check from '../assets/images/icons/check.svg';
 import s from './Employee.module.css';
-
 
 const Employee =()=> {
     return(

@@ -60,23 +60,11 @@ label {
     opacity: 0;
     position: absolute;
     pointer-events: none;
-    }
-    
-    .comission_text {
-        margin: 0 0 0 12px;
-        margin-top: -3px;
-        letter-spacing: 0.6px;
-        line-height: 16px;
-    }
-    
-    /* .default_checkbox {
-                                    opacity: 0;
-                                    position: absolute;
-                                }
-                                .comission_text {
-                                    margin: 0 0 0 12px;
-                                    margin-top: -3px;
-                                    letter-spacing: 0.6px;
-                                    line-height: 16px;
 }
-*/
+
+.comission_text {
+    margin: 0 0 0 12px;
+    margin-top: -3px;
+    letter-spacing: 0.6px;
+    line-height: 16px;
+}
