@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-undef": "error",
+    "comma-dangle": ["warn", "only-multiline"],
+    "semi": [2, "always"],
+    "no-console": "warn",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "require-button-type": "off",
+    "react/button-has-type": "off",
+    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "warn",
+    "camelcase": "warn"
+  },
+  // "comma-dangle": ["warn", "always"],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

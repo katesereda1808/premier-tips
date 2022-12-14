@@ -1,26 +1,22 @@
 import React from 'react';
-import profile_photo from '../assets/images/profile-photo.png';
-import check from '../assets/images/icons/check.svg';
-import s from './Employee.module.css';
+import profile_photo from '../../assets/images/profile-photo.png';
+import check from '../../assets/images/icons/check.svg';
+import styles from './Employee.module.css';
 
-const Employee =()=> {
-    return(
-        <div className={s.profile}>
-            <div className={s.background}></div>
-            <img src={profile_photo} className={s.profile_photo}/>
-            <div className={s.name}>
-                Артур Гаврилов
-                <div>
-                    <img src={check} className={s.check}/>
-                </div>
-            </div>
-            <div className={s.company}>
-                Работает в компании Premier Tips
-            </div>
-            <div className={s.caption}>
-                Собираю на новый Genesis G90!
-            </div>
+function Employee() {
+  return (
+    <div className={styles.profile}>
+      <div className={styles.background} />
+      <img src={profile_photo} className={styles.profile_photo} alt="" />
+      <div className={styles.name}>
+        Артур Гаврилов
+        <div>
+          <img src={check} className={styles.check} alt="" />
         </div>
-    )
+      </div>
+      <div className={styles.company}>Работает в компании Premier Tips</div>
+      <div className={styles.caption}>Собираю на новый Genesis G90!</div>
+    </div>
+  );
 }
-export {Employee};
+export { Employee };
