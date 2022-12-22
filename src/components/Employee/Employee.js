@@ -1,6 +1,5 @@
-import React from 'react';
 import profile_photo from '../../assets/images/profile-photo.png';
-import check from '../../assets/images/icons/check.svg';
+import check from '../../assets/icons/check.svg';
 import styles from './Employee.module.css';
 
 function Employee() {

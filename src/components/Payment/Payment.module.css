@@ -1,9 +1,9 @@
 .payment {
     font-weight: 200;
 }
+
 .button {
     width: 100%;
-    /* padding: 10px; */
     font-weight: 400;
     height: 44px;
     display: flex;
@@ -13,6 +13,7 @@
     border-radius: 4px;
     margin-bottom: 12px;
 }
+
 button.btn_blue:hover {
     background-color: hsla(220, 100%, 61%, 0.7);
 }
@@ -25,26 +26,32 @@ button.btn_gray:hover {
 .img_in_btn {
     margin-top: 5px;
 }
+
 .btn_blue {
     color: #ffffff;
     background-color: #377bff;
 }
+
 .btn_gray {
     color: #3c3c3c;
     background-color: #f5f5f5;
 }
+
 .warning {
     margin-top: 12px;
     letter-spacing: 0.6px;
-        line-height: 16px;
+    line-height: 16px;
 }
+
 a {
     color: #377bff;
     text-decoration: none;
 }
+
 .comission {
     margin-top: 15px;
 }
+
 .checkbox {
     display: inline-block;
     height: 18px;

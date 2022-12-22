@@ -1,4 +1,4 @@
-.input_box{
+.input_box {
     height: 54px;
     overflow: hidden;
     width: 100%;
@@ -9,16 +9,38 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
 }
+
+.sum_input__mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 2px;
+    font-size: 44px;
+    font-weight: 400;
+    outline: none;
+    font-family: 'SF Pro Display', sans-serif;
+    caret-color: transparent;
+    pointer-events: none;
+    color: transparent;
+}
+
+.sum_input__mask .sum_input__currency {
+    color: black;
+}
+
 button {
     background-color: transparent;
     border: none;
     outline: none;
 }
+
 .input_string {
     display: flex;
 }
-.input{
+
+.input {
     position: relative;
     width: 100%;
     border: 0px;
@@ -26,36 +48,23 @@ button {
     font-weight: 400;
     outline: none;
     font-family: 'SF Pro Display', sans-serif;
-/* -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; */
-    }
-    
- /* input::before {
-        content: 'P';
-        height: 10px;
-        width: 10px;
-        color: #3C3C3C;
-        position: absolute;
-        right: -30px;
 }
-*/
-/*  пыталась добавить значок валюты с помощью псевдоэоемента, но с input они не работают */
-.close_btn{
+
+.close_btn {
     height: 24px;
 }
-.sums{
+
+.sums {
     display: flex;
     overflow-x: scroll;
     width: 100%;
 }
+
 .sums::-webkit-scrollbar {
     width: 0;
 }
-.price_btn{
+
+.price_btn {
     padding: 13px 15px;
     border-radius: 4px;
     color: #3C3C3C;
@@ -67,7 +76,8 @@ button {
     margin-right: 10px;
     border: none;
 }
-.price_chosen{
+
+.price_chosen {
     background-color: #3C3C3C;
     color: #ffffff;
 }

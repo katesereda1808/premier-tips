@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
-import spb from '../../assets/images/icons/spb.svg';
-import unchecked from '../../assets/images/icons/unchecked.svg';
-import checked from '../../assets/images/icons/checked.svg';
+import { useState } from 'react';
+import spb from '../../assets/icons/spb.svg';
+import unchecked from '../../assets/icons/unchecked.svg';
+import checked from '../../assets/icons/checked.svg';
 import styles from './Payment.module.css';
 import { commissionPercentsge } from '../../constants';
 
 function Payment({ sum }) {
   const [isChecked, setChecked] = useState(false);
-  // const checkboxChange =()=>{
-  // checked?
-  // setChecked(false):
-  // setChecked(true)
-  // более лаконичный способ
-  //     setChecked(!isChecked);
-  // }
-  // решила прописать функцию в разметке, тк она небольшая
 
   const comissionSum = Math.ceil(sum.replace(/\D/g, '') * commissionPercentsge);
 

@@ -7,9 +7,10 @@ import { Payment } from '../Payment/Payment';
 function MainPage() {
   const [sum, setSum] = useState('');
   const handleSum = (sumValue) => {
-    // setSum(sumValue.replace(/\D/g,'')+' $');
-    // сначала символ валюты добавлялся здесь, но потом стало понятно, что лучше его добавлять в компоненте Sum
-    setSum(sumValue);
+    // setSum(sumValue);
+    setSum(() => {
+      return sumValue;
+    });
   };
   return (
     <div>

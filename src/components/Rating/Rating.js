@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import star_empty from '../../assets/images/icons/star_empty.svg';
-import star_fill from '../../assets/images/icons/star_fill.svg';
+import { useState } from 'react';
+import star_empty from '../../assets/icons/star_empty.svg';
+import star_fill from '../../assets/icons/star_fill.svg';
 import styles from './Rating.module.css';
 import { stars } from '../../constants/index';
 
@@ -26,8 +26,6 @@ function Rating() {
                 name="rating"
                 className={styles.star_radio}
                 value={starNumber}
-                // onClick={()=>setRating(starNumber)}
-                // нужно было расширить функцию, чтобы сделать возможным аннулирование рейтинга при повторном клике на звездочку
                 onClick={() => setStars(starNumber)}
               />
               {/* <img src={`${starNumber <= rating || hover ? star_fill : star_empty}`}  
