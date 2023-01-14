@@ -28,6 +28,7 @@
 
 .sum_input__mask .sum_input__currency {
     color: black;
+    margin-left: 10px;
 }
 
 button {

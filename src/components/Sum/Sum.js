@@ -16,21 +16,17 @@ function Sum({ handleSum, value }) {
   };
 
   const changeSum = (e) => {
-    e.target.value = validateSum(e.target.value);
-    // handleSum(() => {
-    //   return e.target.value;
-    // });
-    handleSum(e.target.value);
-
-    sumMask.current.innerHTML = `${e.target.value} <span class=${styles.sum_input__currency}>₽</span>`;
-    console.log(value);
+    handleSum(validateSum(e.target.value));
   };
 
   return (
     <div>
       <div className={styles.input_box}>
         <input value={value} className={styles.input} onChange={changeSum} />
-        <div className={styles.sum_input__mask} ref={sumMask} />
+        <div className={styles.sum_input__mask} ref={sumMask}>
+          {value}
+          <span className={styles.sum_input__currency}>₽</span>
+        </div>
         <button onClick={clearInput}>
           <img src={close_btn} className={styles.close_btn} alt="" />
         </button>
