@@ -33,7 +33,7 @@ function Sum({ handleSum, value }) {
               type="button"
               key={sums_item}
               value={sums_item}
-              className={`${styles.price_btn} ${sums_item === value ? styles.price_chosen : ''}`}
+              className={`${styles.price_btn} ${sums_item === +value ? styles.price_chosen : ''}`}
               onClick={changeSum}
             />
           );
