@@ -28,10 +28,6 @@ function Rating() {
                 value={starNumber}
                 onClick={() => setStars(starNumber)}
               />
-              {/* <img src={`${starNumber <= rating || hover ? star_fill : star_empty}`}  
-              сначала был такой порядок, сначала должен идти hover, потом rating
-              + синтаксическая ошибка, выражение hover || rating не было заключено в круглые скобки
-              */}
               <img
                 src={`${starNumber <= (hover || rating) ? star_fill : star_empty}`}
                 className={styles.star}

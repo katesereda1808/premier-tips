@@ -8,14 +8,15 @@
     margin-bottom: 26px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
     position: relative;
 }
 
 .sum_input__mask {
     height: 100%;
-    width: 100%;
     position: absolute;
+    display: flex;
     left: 2px;
     font-size: 44px;
     font-weight: 400;
@@ -26,9 +27,13 @@
     color: transparent;
 }
 
+.sum_input__mask_value {
+    max-width: 246px;
+}
+
 .sum_input__mask .sum_input__currency {
     color: black;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 button {
@@ -43,7 +48,7 @@ button {
 
 .input {
     position: relative;
-    width: 100%;
+    width: 243.37px;
     border: 0px;
     font-size: 44px;
     font-weight: 400;

@@ -8,9 +8,6 @@ function MainPage() {
   const [sum, setSum] = useState('');
   const handleSum = (sumValue) => {
     setSum(sumValue);
-    // setSum(() => {
-    //   return sumValue;
-    // });
   };
   return (
     <div>
